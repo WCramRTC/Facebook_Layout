@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border: 1px solid black; */
+}
+
+input {
+    color: black;
+}
+
+/* Nav */
+
+nav {
+    height: 50px;
+    background-color: rgb(32, 32, 32);
+    display: grid;
+    grid-template-columns: 1fr minmax(500px, 700px) 1fr;
+    padding: 5px;
+}
+
+#nav-center-links {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+#company-link-search {
+    display: grid;
+    grid-template-columns: 20% 60% auto;
+}
+
+#company-link-search input {
+    border-radius: 20px;
+}
+
+#nav-center-links > a {
+    text-decoration: none;
+}
+
+/* Main */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr minmax(500px, 700px) 1fr;
+    background-color: rgb(59, 59, 59);
+    height: 1000px;
+}
+
+#center-column {
+    background-color: rgb(43, 42, 42);
+    padding: 0 20px;
+}
+
+#center-column > * {
+    margin-top: 10px;
+}
+
+/* Stories */
+
+.stories {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns:  auto auto auto auto auto;
+    gap: 10px;
+    background-color: rgb(66, 66, 66);
+    padding: 10px;
+}
+
+.story-post {
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(43, 42, 42);
+    background-image: url("https://via.placeholder.com/150");
+    background-position: center;
+}
+
+.story-post h3 {
+    border: 3px solid white;
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    margin: 5px;
+    text-align: center;
+    background-color:rgb(32, 32, 32)
+}
+
+/* Add Post */
+
+.add-post {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: rgb(66, 66, 66);
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.top-add-post {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 10% 90%;
+}
+
+.bottom-add-post {
+    display: grid;
+    grid-template-columns: auto auto auto;   
+}
+
+.bottom-add-post a {
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+.post-link a  {
+    color: white;
+}
+
+.blog-post {
+    background-color: rgb(66, 66, 66);
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 600px;
+    padding: 10px;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 400px;
+}
